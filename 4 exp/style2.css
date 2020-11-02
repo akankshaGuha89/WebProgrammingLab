@@ -1,0 +1,30 @@
+body
+{
+    background-color: lightgrey;
+}
+div 
+{
+    background-color: white;
+    width: 600px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    position: relative;
+    left: 270px;
+}
+.title
+{
+    background-color: white;
+    text-align: center;
+}
+.abstract-content
+{
+    background-color: white;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
