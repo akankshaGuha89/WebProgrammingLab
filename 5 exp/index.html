@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>experiment week 4</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="main-div">
+    <div class="container">
+    <form name="f1" action="" method="GET">
+        <div class="form-group">
+
+        
+
+        <input name="first" type="text" class="form-control" placeholder="Enter your name"> <br>
+        <input type="text" name="email" class="form-control" placeholder="Enter you email"> <br>
+        <input type="text" name="age" class="form-control"placeholder="Enter age"> <br>
+        <input type="text" name="url" class="form-control" placeholder="Enter URL"> <br>
+        <input type="number" name="num" class="form-control" placeholder="Enter your phone number"><br>
+        <input type="submit" value="submit" class="btn" onclick="validate()">
+</div>
+    </form>
+    </div>
+    <script>
+        function validate(e){
+            var form= document.f1;
+            if(form.first.value==""){
+                alert("Pls fill the name");
+            }
+            if (form.email.value.indexOf("@")==-1){
+                alert("Pls enter a valid email address");
+            }
+            if(form.url.value.indexOf("www.")==-1){
+                alert("Enter a valid url");
+                form.url.focus()
+            }
+            if (form.age.value>110 || form.age.value<18){
+                alert("Age permitted : above 18");
+            }
+            if(form.num.value.length!=10){
+                alert("enter a 10 digit phone number");
+            }
+            e.preventDefault();
+        }
+    </script>
+</body>
+</html>

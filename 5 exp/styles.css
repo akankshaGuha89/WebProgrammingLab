@@ -1,0 +1,16 @@
+.main-div
+{
+    background-color: lightgrey;
+}
+.container{
+margin: 100px auto;
+text-align: center;
+width:40%;
+background-color: royalblue;
+padding: 15px;
+border-radius: 10px;
+}
+.btn
+{
+    background-color: white;
+}
